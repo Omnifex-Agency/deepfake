@@ -1,6 +1,6 @@
 """
 Deepfake Research Collective — Literature Registry & Directory Generator
-Constructs and maintains research/papers/PAPERS_DIRECTORY.md from papers_data_compiled.json.
+Constructs and maintains research/papers/PAPERS_DIRECTORY.md and papers_catalog.json from papers_data_compiled.json.
 """
 
 import os
@@ -13,6 +13,11 @@ with open(papers_file, "r", encoding="utf-8") as f:
     papers = json.load(f)
 
 print(f"Loaded {len(papers)} papers from {papers_file}")
+
+# Save papers_catalog.json in papers/
+catalog_file = Path(__file__).resolve().parent / "papers" / "papers_catalog.json"
+with open(catalog_file, "w", encoding="utf-8") as f:
+    json.dump(papers, f, indent=2, ensure_ascii=False)
 
 # Generate BibTeX for all papers
 bibtex_blocks = []
@@ -40,6 +45,9 @@ categories_order = [
     "Temporal & Video Dynamics",
     "Audio Deepfake & Speech Anti-Spoofing",
     "Multimodal Audio-Visual Forensics",
+    "Biological & Physiological Forensics",
+    "Watermarking, Provenance & Defensive Cloaking",
+    "Psychology, Perception & Epistemic Impact",
     "Codec & Compression Robustness",
     "Surveys, Benchmarks & Metrology"
 ]
@@ -51,15 +59,18 @@ category_descriptions = {
     "Temporal & Video Dynamics": "Investigates inter-frame temporal coherence, flicker artifacts, phoneme-viseme biomechanical consistency, and spatiotemporal sequence modeling.",
     "Audio Deepfake & Speech Anti-Spoofing": "Inspects raw audio waveforms, linear filterbanks (LFCC/CQCC), graph attention networks (AASIST), and pretrained speech foundation encoders (Wav2Vec 2.0, WavLM, Whisper).",
     "Multimodal Audio-Visual Forensics": "Studies cross-modal synchronization, audio-visual representation dissonance, and joint contrastive learning across facial video and speech tracks.",
+    "Biological & Physiological Forensics": "Grounds authenticity in human physiological invariants: remote photoplethysmography (rPPG) blood pulse, pupil shape geometry, and spontaneous blink kinematics.",
+    "Watermarking, Provenance & Defensive Cloaking": "Investigates active cryptographic authenticity standards (C2PA), neural watermarking (SynthID, Stable Signature), and adversarial facial immunization (PhotoGuard).",
+    "Psychology, Perception & Epistemic Impact": "Examines human psychophysical limits in synthetic media detection, the AI Hyperrealism effect, Truth-Default Theory, and cognitive inoculation/prebunking.",
     "Codec & Compression Robustness": "Addresses forensic vulnerability to lossy social media compression (JPEG, H.264/AVC, H.265/HEVC, Opus, MP3), anti-forensic perturbation attacks, and out-of-distribution shifts.",
-    "Surveys, Benchmarks & Metrology": "Standardized evaluation benchmarks, unified evaluation toolkits (DeepfakeBench), challenge datasets (DFDC, Celeb-DF), and comprehensive state-of-the-art literature surveys."
+    "Surveys, Benchmarks & Metrology": "Standardized evaluation benchmarks, unified evaluation toolkits (DeepfakeBench), challenge datasets (DFDC, Celeb-DF, WildDeepfake, GenImage), and state-of-the-art literature surveys."
 }
 
 md_lines = [
     "# Deepfake Research Collective — Forensic Literature Repository & Paper Directory",
     "",
-    "> **Archive Status:** 53 Full-Text Academic Papers Downloaded Locally (~211.5 MB total PDF archive).",
-    "> All papers are categorized according to academic domain, indexing verified arXiv identifiers, conference venues, direct local PDF endpoints, official code repositories, reported benchmark metrics, and known research limitations.",
+    f"> **Archive Status:** {len(papers)} Verified Academic Papers Cataloged across 11 Specialized Scientific Domains.",
+    "> All papers index verified arXiv/venue identifiers, conference venues, direct local PDF endpoints, official code repositories, reported benchmark metrics, and known research limitations.",
     "",
     "## Table of Contents",
     ""
@@ -91,9 +102,12 @@ for cat in categories_order:
         md_lines.append(f"- **Identified Limitations:** *{p['limitations']}*")
         
         links = []
-        links.append(f"[Local PDF Archive]({p['local_pdf']})")
-        links.append(f"[arXiv Abstract]({p['paper_url']})")
-        links.append(f"[Direct PDF]({p['pdf_url']})")
+        if p.get("local_pdf"):
+            links.append(f"[Local PDF Endpoint]({p['local_pdf']})")
+        if p.get("paper_url"):
+            links.append(f"[Venue / Abstract]({p['paper_url']})")
+        if p.get("pdf_url"):
+            links.append(f"[Direct PDF]({p['pdf_url']})")
         if p.get("code_url"):
             links.append(f"[Official Code]({p['code_url']})")
         
@@ -104,4 +118,4 @@ output_file = Path(__file__).resolve().parent / "papers" / "PAPERS_DIRECTORY.md"
 with open(output_file, "w", encoding="utf-8") as f:
     f.write("\n".join(md_lines))
 
-print(f"Saved {output_file} successfully!")
+print(f"Saved {output_file} successfully with {len(papers)} papers across {len(categories_order)} categories!")

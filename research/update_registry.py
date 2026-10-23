@@ -1,8 +1,6 @@
 """
-DeepShield AI — Research Registry & Directory Generator
-Constructs:
-1. app/research_data.py (53 categorized papers, datasets, hypotheses, complete BibTeX)
-2. research/papers/PAPERS_DIRECTORY.md (comprehensive markdown literature catalog)
+Deepfake Research Collective — Literature Registry & Directory Generator
+Constructs and maintains research/papers/PAPERS_DIRECTORY.md from papers_data_compiled.json.
 """
 
 import os
@@ -10,16 +8,16 @@ import json
 from pathlib import Path
 
 # Load compiled papers
-with open("research/papers_data_compiled.json", "r", encoding="utf-8") as f:
+papers_file = Path(__file__).resolve().parent / "papers_data_compiled.json"
+with open(papers_file, "r", encoding="utf-8") as f:
     papers = json.load(f)
 
-print(f"Loaded {len(papers)} papers")
+print(f"Loaded {len(papers)} papers from {papers_file}")
 
 # Generate BibTeX for all papers
 bibtex_blocks = []
 for p in papers:
     pid = p["id"].replace("-", "_").replace(" ", "_")
-    # clean first author surname
     first_author = p["authors"].split(",")[0].split()[-1] if p["authors"] else "Author"
     first_author_clean = "".join(c for c in first_author if c.isalnum())
     key = f"{first_author_clean.lower()}{p['year']}{pid[:6]}"
@@ -35,41 +33,6 @@ for p in papers:
 
 all_bibtex_str = "\n\n".join(bibtex_blocks)
 
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
-# Read existing datasets and hypotheses from app/research_data.py
-import app.research_data as rd
-datasets = rd.DATASETS_ANALYSIS
-hypotheses = rd.RESEARCH_GAPS_AND_HYPOTHESES
-
-# Format papers as python code
-papers_code = json.dumps(papers, indent=4)
-
-research_data_content = f'''"""
-DeepShield AI — Research Intelligence Repository & Metadata Registry
-Contains structured data for:
-- 53 Verified Academic Literature Review Papers across 8 Forensic Categories
-- 11 Forensic Datasets & Zero-Leakage Protocols
-- 5 Research Gaps & 4 Falsifiable Hypotheses (H1 - H4)
-- Complete BibTeX Academic Citations for all 53 Papers
-"""
-
-RESEARCH_PAPERS = {papers_code}
-
-DATASETS_ANALYSIS = {json.dumps(datasets, indent=4)}
-
-RESEARCH_GAPS_AND_HYPOTHESES = {json.dumps(hypotheses, indent=4)}
-
-BIBTEX_ENTRIES = r"""{all_bibtex_str}"""
-'''
-
-with open("app/research_data.py", "w", encoding="utf-8") as f:
-    f.write(research_data_content)
-
-print("Saved app/research_data.py successfully!")
-
-# Generate research/papers/PAPERS_DIRECTORY.md
 categories_order = [
     "Spatial & Blending Forensics",
     "Frequency & Spectral Forensics",
@@ -93,7 +56,7 @@ category_descriptions = {
 }
 
 md_lines = [
-    "# DeepShield AI — Forensic Literature Repository & Paper Directory",
+    "# Deepfake Research Collective — Forensic Literature Repository & Paper Directory",
     "",
     "> **Archive Status:** 53 Full-Text Academic Papers Downloaded Locally (~211.5 MB total PDF archive).",
     "> All papers are categorized according to academic domain, indexing verified arXiv identifiers, conference venues, direct local PDF endpoints, official code repositories, reported benchmark metrics, and known research limitations.",
@@ -137,7 +100,8 @@ for cat in categories_order:
         md_lines.append(f"- **Access Links:** {' &bull; '.join(links)}")
         md_lines.append("")
 
-with open("research/papers/PAPERS_DIRECTORY.md", "w", encoding="utf-8") as f:
+output_file = Path(__file__).resolve().parent / "papers" / "PAPERS_DIRECTORY.md"
+with open(output_file, "w", encoding="utf-8") as f:
     f.write("\n".join(md_lines))
 
-print("Saved research/papers/PAPERS_DIRECTORY.md successfully!")
+print(f"Saved {output_file} successfully!")

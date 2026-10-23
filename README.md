@@ -1,339 +1,234 @@
-# DeepShield AI — Multimodal Deepfake Detection Research
+# Deepfake Research Collective — Global Deepfake Research Hub
 
 <div align="center">
 
-**A publication-grade system combining spatial-frequency visual encoders, codec-invariant acoustic networks, and decoupled asymmetric cross-modal risk fusion.**
+**The definitive, all-encompassing research repository and knowledge hub for synthetic media: generative creation technologies, multi-layer forensic science, global threat intelligence, real-world case studies, international legal frameworks, cryptographic provenance (C2PA), behavioral psychology, defense incident playbooks, and forensic literature synthesis.**
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776ab?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
-[![Research Stage](https://img.shields.io/badge/Stage-5%20Complete-6366f1?style=flat-square)]()
-[![Zero-Leakage](https://img.shields.io/badge/Benchmark-Zero--Leakage%20Evaluated-f59e0b?style=flat-square)]()
-[![Papers](https://img.shields.io/badge/Literature-53%20Verified%20Papers-0ea5e9?style=flat-square)](research/papers/PAPERS_DIRECTORY.md)
+[![Research Scope: Complete Deepfake Ecosystem](https://img.shields.io/badge/Scope-Complete%20Deepfake%20Ecosystem-blueviolet?style=flat-square)]()
+[![Literature: 53 Verified Papers](https://img.shields.io/badge/Literature-53%20Archived%20Papers%20(PDFs)-0ea5e9?style=flat-square)](research/papers/PAPERS_DIRECTORY.md)
+[![C2PA & Provenance](https://img.shields.io/badge/Standards-C2PA%20%7C%20SynthID%20%7C%20PhotoGuard-f59e0b?style=flat-square)](research/watermarking_and_provenance.md)
+[![Legal Frameworks](https://img.shields.io/badge/Policy-DEFIANCE%20%7C%20EU%20AI%20Act%20%7C%20CAC-10b981?style=flat-square)](research/legal_regulatory_and_policy.md)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776ab?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 
 </div>
 
 ---
 
-## Navigation
+## 🏛️ Master Navigation Hub
 
-> **This README is the primary hub.** All sections link to detailed markdown documents — readable directly on GitHub.
+> **This repository is structured as a modular, GitHub-native research portal.** Every document is formatted for clean direct reading on GitHub, complete with mathematical equations, interactive Mermaid diagrams, verified legal citations, empirical benchmark tables, and local source links.
 
-| Document | Contents |
-|:---|:---|
-| **[📚 Literature Review](research/literature_review.md)** | 53 verified papers across 8 forensic domains |
-| **[🗂️ Papers Directory](research/papers/PAPERS_DIRECTORY.md)** | Full catalog with links, metrics, and local PDFs |
-| **[🔬 Research Gaps & Hypotheses](research/research_gaps.md)** | 5 formal gaps, H1–H4 falsifiable hypotheses |
-| **[🏗️ Model Comparison](research/model_comparison.md)** | 12 candidate architectures with VRAM/latency matrix |
-| **[📊 Dataset Analysis](research/dataset_analysis.md)** | 11 benchmarks with zero-leakage partition protocols |
-| **[📄 Paper Comparison](research/paper_comparison.md)** | Side-by-side invariance & limitation matrix |
-| **[🧪 Evaluation Report](docs/evaluation_report.md)** | Stage 3–5 empirical benchmark results |
-| **[📝 Paper Draft](docs/paper_draft.md)** | Conference preprint (IEEE/CVF CVPR / ACM MM) |
-| **[🏛️ Architecture](docs/architecture.md)** | Formal system design specification |
-| **[🗺️ Roadmap](docs/roadmap.md)** | Phased delivery schedule |
+### 🌐 Module 1 · The Global Deepfake Research Compendium
 
----
-
-## The Problem
-
-Existing deepfake detectors exhibit **three catastrophic failure modes** in real-world environments:
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                    REAL-WORLD FAILURE TRIAD                         │
-├─────────────────────────────────────────────────────────────────────┤
-│  H₁  Spatial Micro-Texture Brittleness                              │
-│      Standard spatial CNNs collapse to 50% accuracy at JPEG Q≤50   │
-│      (high-frequency pixel artifacts vanish under compression)      │
-├─────────────────────────────────────────────────────────────────────┤
-│  H₂  Acoustic Codec Fragility                                       │
-│      LFCC-LCNN surges from 0% → 20% EER under telephony codec      │
-│      (narrowband 3.8 kHz cutoff strips spectral evidence)           │
-├─────────────────────────────────────────────────────────────────────┤
-│  H₃  Multimodal Modality Absence                                    │
-│      Joint concatenation → 100% false alarms on pristine content   │
-│      when audio/video is missing (zero-padding distribution shift)  │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-**DeepShield AI solves all three.** → [Full hypothesis specifications](research/research_gaps.md)
+| Research Dossier | Scope & Contents | Key Topics |
+|:---|:---|:---|
+| **[🧬 Master Taxonomy & Ontology](research/taxonomy_and_ontology.md)** | The definitive 7-Layer Deepfake Architectural Stack (7-DAS) | Modality taxonomy (V1–V6, A1–A4, M1–M3), threat tiers, SAL 1–4 security levels |
+| **[⚙️ Generation & Synthesis Technologies](research/generation_technologies.md)** | Technical treatise on generative creation pipelines | DFL, SimSwap, LivePortrait, Sora/Kling/Wan2.1 video DiT, VALL-E, RVC, 3DGS |
+| **[🔬 Multi-Layer Forensic Science](research/forensics_and_detection.md)** | Beyond black-box classifiers: physical & biological invariants | rPPG blood flow pulse, corneal reflection, 3D Lambertian lighting, PRNU, CFA, DIRE |
+| **[🚨 Threat Matrix & Incident Case Studies](research/threat_matrix_and_case_studies.md)** | Investigative dossier on real-world weaponization | $25.6M HK Arup heist, NH Biden robocall, Slovakia election, Gabon coup, NCII |
+| **[⚖️ Legal, Regulatory & Policy Compendium](research/legal_regulatory_and_policy.md)** | Global legislative, criminal, civil, and copyright frameworks | US DEFIANCE Act, NO FAKES, FCC robocalls, CA AB 2655, TN ELVIS, EU AI Act, CAC |
+| **[🔐 Cryptographic Provenance & Watermarking](research/watermarking_and_provenance.md)** | Active authenticity standards and defensive immunizations | C2PA architecture, Leica/Sony/Canon hardware keys, SynthID, PhotoGuard cloaking |
+| **[🧠 Psychology, Perception & Epistemic Impact](research/psychology_and_societal_impact.md)** | Human cognitive vulnerability and societal consequences | 53.5% human detection failure, AI hyperrealism, Truth-Default theory, SIFT prebunking |
+| **[🛡️ Defense Playbooks & Incident Response](research/defense_playbooks_and_incident_response.md)** | Actionable SOPs for enterprises, journalists, and victims | Real-time video 90° turn test, virtual camera blocking, StopNCII.org workflow |
+| **[🗂️ Global Tools & Platforms Directory](research/deepfake_tools_directory.md)** | Exhaustive catalog of tools, services, and benchmarks | Open-source generators, forensic toolkits, commercial platforms, datasets |
 
 ---
 
-## System Architecture
+### 🧪 Module 2 · Technical Forensics & Machine Learning Literature
 
-```
-                        DEEPSHIELD AI — SYSTEM OVERVIEW
+| Technical Document | Scope & Contents | Key Highlights |
+|:---|:---|:---|
+| **[📚 Literature Review](research/literature_review.md)** | 53 verified academic papers across 8 forensic domains | CVPR, ICCV, ECCV, NeurIPS, Interspeech, ICASSP coverage |
+| **[📂 Papers Directory & Local PDF Archive](research/papers/PAPERS_DIRECTORY.md)** | Annotated catalog with direct links and local full-text PDFs | 53 local PDFs (~211.5 MB) organized by forensic domain |
+| **[🎯 Research Gaps & Hypotheses](research/research_gaps.md)** | 5 formal research gaps and H1–H4 falsifiable hypotheses | JPEG frequency collapse, audio codec collapse, modality absence |
+| **[🏗️ Model Comparison Matrix](research/model_comparison.md)** | 12 candidate architectures evaluated | VRAM footprint, latency, and real-time execution matrix |
+| **[📊 Dataset Analysis & Protocols](research/dataset_analysis.md)** | 11 benchmark datasets analyzed | Zero-leakage partition protocols, storage budgets, diversity audits |
+| **[📋 Side-by-Side Invariance Matrix](research/paper_comparison.md)** | Cross-generator and cross-codec invariance comparison | Compression tolerance, latency, and vulnerability breakdown |
 
- ┌──────────────────┐
- │  Image / Video   │──► Learnable 2D Gabor Residuals (K=16 filters) ──┐
- │  Keyframe Stream │──► EfficientNet-B0 Spatial Backbone ──────────────┤
- └──────────────────┘    Gated Cross-Attention (spatial × frequency)    │
-                                                                        ▼
- ┌──────────────────┐                                       ┌─────────────────────┐
- │  Audio Speech    │──► 80-Ch Log-Mel STFT ────────────────► Decoupled Asymmetric │
- │  Track (.wav)    │    Multi-Scale SE-ResNet Blocks         │ Risk Fusion Gate    │
- └──────────────────┘                                        └─────────────────────┘
-                                                                        │
-                           ┌────────────────────────────────────────────┘
-                           ▼
-              P_fake = max(s_v, s_a, σ(w_v·s_v + w_a·s_a + w_d·d_av + b))
-              d_av = |s_v - s_a|   ← cross-modal dissonance penalty
-                           │
-              ┌────────────┴─────────────┐
-              ▼                          ▼
-    Calibrated Risk Score          95% Wilson CI Bounds
-    + Grad-CAM Saliency            + FakeAVCeleb Quadrant
+---
+
+## 🧭 The 7-Layer Deepfake Architectural Stack (7-DAS)
+
+To analyze the deepfake phenomenon holistically — from raw silicon physics up to geopolitics — this repository establishes the **7-Layer Deepfake Architectural Stack**:
+
+```mermaid
+graph TD
+    L7["Layer 7 · Societal & Epistemic Impact (Liar's Dividend, Disinformation, Legal Liability)"]
+    L6["Layer 6 · Attack Vectors & Threats (eKYC Spoofing, CEO Fraud, NCII Extortion, Robocalls)"]
+    L5["Layer 5 · Cross-Modal Coherence (Audio-Visual Lip Sync, Viseme-Phoneme, Semantics)"]
+    L4["Layer 4 · Biometric & Physical Reality (rPPG Pulse, Corneal Specular, Gaze, Shadows)"]
+    L3["Layer 3 · Algorithmic Synthesis (Autoencoder, GAN, Latent Diffusion, DiT, Flow Matching)"]
+    L2["Layer 2 · Signal & Spectral Transforms (DCT, FFT, Mel-Spectrogram, Color Spaces)"]
+    L1["Layer 1 · Sensor & Hardware Substrate (PRNU, CFA Demosaicing, Rolling Shutter)"]
+
+    L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
 ```
 
-→ [Full architecture specification](docs/architecture.md)
+---
+
+## 🚨 The Deepfake Threat Landscape & Real-World Incident Case Studies
+
+Synthetic media has transitioned into an active weapon utilized across cybercrime, corporate fraud, political sabotage, and personal extortion.
+
+```mermaid
+graph LR
+    Threats["Deepfake Weaponization"]
+    Threats --> Fin["Corporate Wire Fraud ($25.6M HK Arup Heist)"]
+    Threats --> Elect["Democratic Sabotage (NH Biden Robocall, Slovak Tape)"]
+    Threats --> Bio["Biometric Bypass (eKYC Virtual Camera Injection)"]
+    Threats --> NCII["Non-Consensual Exploitation (Sextortion, Defamation)"]
+    Threats --> Liar["The Liar's Dividend (Guilty Dismissing Real Truth)"]
+```
+
+### Milestone Real-World Case Studies Analyzed in Depth:
+1. **The $25.6 Million Hong Kong Multinational CFO Heist (Arup Case, 2024):** A finance employee was deceived into transferring $25.6M after attending a live video conference where all other participants were deepfake video/audio replicas of London executives. → [Full Case Study](research/threat_matrix_and_case_studies.md#case-study-1-the-256-million-hong-kong-multinational-cfo-heist-arup-case-2024)
+2. **The New Hampshire Presidential Primary Joe Biden Robocall (2024):** Cloned audio of President Biden deployed to 25,000 voters urging them not to vote; led to felony indictments, a $6M FCC fine, and federal bans on AI robocalls. → [Full Case Study](research/threat_matrix_and_case_studies.md#case-study-2-the-new-hampshire-presidential-primary-joe-biden-robocall-2024)
+3. **The Slovakian Election Eve Deepfake Audio (2023):** Fabricated audio tape released during the legal 48-hour pre-vote blackout window tipping a national parliamentary election. → [Full Case Study](research/threat_matrix_and_case_studies.md#case-study-3-the-slovakian-parliamentary-election-eve-deepfake-september-2023)
+4. **The Gabon Coup Attempt & The Liar's Dividend (2018–2019):** Suspicion that an authentic presidential video was an AI deepfake triggered an armed military coup d'état. → [Full Case Study](research/threat_matrix_and_case_studies.md#case-study-4-the-gabon-president-ali-bongo-stroke-reenactment--military-coup-20182019)
+5. **The Global NCII Crisis & Sextortion Epidemic:** Examining technological and legal mechanisms to combat non-consensual exploitation. → [Full Case Study](research/threat_matrix_and_case_studies.md#case-study-7-non-consensual-intimate-imagery-ncii--mass-exploitation)
 
 ---
 
-## Three Research Contributions
+## ⚖️ Global Legal & Policy Landscape
 
-### Contribution 1 · Adaptive Spatial-Frequency Dual-Stream Visual Detector
+Governments worldwide have enacted landmark legislation to criminalize, penalize, and regulate synthetic media:
 
-**Learnable 2D Gabor Filterbank** with $K=16$ orientation-parameterized filters:
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                      GLOBAL DEEPFAKE REGULATORY COMPARISON                      │
+├────────────────────┬────────────────────────────────────┬───────────────────────┤
+│ Jurisdiction       │ Primary Statutes & Mandates        │ Maximum Penalty       │
+├────────────────────┼────────────────────────────────────┼───────────────────────┤
+│ United States      │ • DEFIANCE Act of 2024 (S. 3696)   │ $150,000 per violation│
+│                    │ • NO FAKES Act (Federal likeness)  │ $6,000,000 FCC fine   │
+│                    │ • FCC TCPA Ruling (Robocalls)      │ Felony criminal charges│
+│                    │ • California AB 2655, SB 942       │                       │
+│                    │ • Tennessee ELVIS Act (Voice IP)   │                       │
+├────────────────────┼────────────────────────────────────┼───────────────────────┤
+│ European Union     │ • EU AI Act (Regulation 2024/1689) │ €35M or 7% of global  │
+│                    │   Article 50 (Mandatory labeling)  │ annual turnover       │
+│                    │   Article 5 (Prohibited practices) │                       │
+│                    │ • Digital Services Act (DSA)       │                       │
+├────────────────────┼────────────────────────────────────┼───────────────────────┤
+│ China              │ • CAC Deep Synthesis Provisions    │ Service shutdown,     │
+│                    │ • Generative AI Interim Measures   │ algorithmic registry  │
+│                    │   (Mandatory real-name & watermark)│ revocation, detention │
+├────────────────────┼────────────────────────────────────┼───────────────────────┤
+│ United Kingdom     │ • Online Safety Act 2023           │ 2 years imprisonment  │
+├────────────────────┼────────────────────────────────────┼───────────────────────┤
+│ South Korea        │ • Sexual Violence Punishment Act   │ 5 to 7 years prison   │
+└────────────────────┴────────────────────────────────────┴───────────────────────┘
+```
 
-$$u' = u\cos\theta_k + v\sin\theta_k, \quad v' = -u\sin\theta_k + v\cos\theta_k$$
-
-$$g_k(u,v) = \exp\!\left(-\frac{u'^2 + \gamma_k^2 v'^2}{2\sigma_k^2}\right)\cos\!\left(\frac{2\pi u'}{\lambda_k}\right)$$
-
-Zero-mean normalization makes residuals **compression-invariant**:
-
-$$\tilde{g}_k = \frac{g_k - \bar{g}_k}{\|g_k - \bar{g}_k\|_2 + \epsilon}$$
-
-**Result:** ≥ 0.996 ROC-AUC at JPEG Q=30 · +30.06% AUC advantage under 112×112 downsampling
-
-### Contribution 2 · WhisperSpecRNet Codec-Invariant Acoustic Detector
-
-80-channel log-Mel spectrogram aligned with foundation ASR frontends:
-
-$$M(t,f) = \ln\!\left(1 + 1000 \cdot |\text{STFT}(a)|^2 \cdot \Phi_\text{Mel}\right)$$
-
-Multi-scale Squeeze-and-Excitation blocks **recalibrate channel weights** when upper frequency bands are truncated by lossy telephony codecs.
-
-**Result:** 0.00% EER and 96.7% accuracy under narrowband telephony (3.8 kHz) · LFCC-LCNN collapses to 20% EER
-
-### Contribution 3 · Decoupled Asymmetric Risk Fusion
-
-$$P_\text{fake} = \max\!\left(s_v,\; s_a,\; \sigma(w_v s_v + w_a s_a + w_d d_{av} + b)\right), \quad d_{av} = |s_v - s_a|$$
-
-Unimodal **fallback guarantee** — when either stream is absent, the system routes through the available stream only, eliminating zero-padding distribution shift.
-
-**Result:** 100% accuracy on all four FakeAVCeleb quadrants (RR/FR/RF/FF) · **0 false alarms** on pristine media with a missing stream
-
----
-
-## Empirical Benchmarks
-
-> All results on **strictly disjoint, untouched holdout partitions** — zero identity or source leakage.
-
-### Image Robustness (ROC-AUC)
-
-| Stress Condition | EfficientNet-B0 | DeepShield | Δ AUC |
-|:---|:---:|:---:|:---:|
-| Pristine (clean) | 1.0000 (97.8%) | **1.0000 (100.0%)** | Parity |
-| JPEG Q=70 | 0.9849 (82.6%) | **1.0000 (97.8%)** | **+1.51%** |
-| JPEG Q=50 | 0.7524 (50.0%) | **1.0000 (78.3%)** | **+24.76%** |
-| JPEG Q=30 | 0.8147 (50.0%) | **0.9962 (93.5%)** | **+18.15%** |
-| Gaussian Blur σ=1 | 0.6389 (50.0%) | **0.9017 (58.7%)** | **+26.28%** |
-| Downsample 112×112 | 0.6862 (50.0%) | **0.9868 (65.2%)** | **+30.06%** |
-
-### Audio Robustness (Equal Error Rate)
-
-| Codec Condition | LFCC-LCNN | WhisperSpecRNet | Advantage |
-|:---|:---:|:---:|:---:|
-| Clean baseline | 0.00% EER | **0.00% EER** | Parity |
-| MP3 64 kbps | 0.00% EER | **0.00% EER** | Parity |
-| **Telephony 3.8 kHz** | **20.00% EER** | **0.00% EER** | **EER 20% → 0%** |
-| Room reverberation | 0.00% EER | **0.00% EER** | Parity |
-
-### Multimodal Fallback (FakeAVCeleb)
-
-| Operational Scenario | Naive Concat | DeepShield Decoupled | Advantage |
-|:---|:---:|:---:|:---:|
-| 4-Quadrant Overall Accuracy | 100.0% | **100.0%** | Parity |
-| Audio Missing — ROC-AUC | 0.8025 | **0.9095** | **+10.70%** |
-| Audio Missing — False Positives | **9 FP (100% false alarms!)** | **0 FP** | **False alarms eliminated** |
-| Video Missing — Precision | 79.41% | **100.00%** | **+20.59%** |
-
-→ [Full evaluation report with stage-by-stage breakdown](docs/evaluation_report.md)
+→ [Read the full Legal, Regulatory & Policy Compendium](research/legal_regulatory_and_policy.md)
 
 ---
 
-## Literature Review
+## 🔬 Multi-Layer Forensic Defense Spectrum
 
-**53 verified, locally-archived academic papers** across 8 forensic domains.
+Deepfake detection is not merely training a convolutional neural network on face crops. A robust forensic architecture inspects **immutable physical, biological, and sensor-level invariants**:
 
-| Domain | Papers | Key Venue Coverage |
-|:---|:---:|:---|
-| [Spatial & Blending Forensics](research/papers/PAPERS_DIRECTORY.md#spatial--blending-forensics) | 7 | CVPR, ICCV, ECCV |
-| [Frequency & Spectral Analysis](research/papers/PAPERS_DIRECTORY.md#frequency--spectral-forensics) | 6 | ICML, CVPR, ECCV |
-| [Diffusion & Generative Fingerprints](research/papers/PAPERS_DIRECTORY.md#diffusion--generative-fingerprints) | 8 | CVPR, ICCV, NeurIPS |
-| [Temporal & Video Dynamics](research/papers/PAPERS_DIRECTORY.md#temporal--video-dynamics) | 6 | ICCV, CVPR, ACM MM |
-| [Audio Deepfake & Speech Anti-Spoofing](research/papers/PAPERS_DIRECTORY.md#audio-deepfake--speech-anti-spoofing) | 11 | Interspeech, ICASSP |
-| [Multimodal Audio-Visual Forensics](research/papers/PAPERS_DIRECTORY.md#multimodal-audio-visual-forensics) | 6 | NeurIPS, CVPR, ACM MM |
-| [Codec & Compression Robustness](research/papers/PAPERS_DIRECTORY.md#codec--compression-robustness) | 4 | CVPRW, ICCV |
-| [Surveys, Benchmarks & Metrology](research/papers/PAPERS_DIRECTORY.md#surveys-benchmarks--metrology) | 5 | NeurIPS, CVPR |
+```mermaid
+graph TD
+    Media["Query Media Asset"] --> Bio["1. Biological: rPPG Blood Flow Pulse, Blink Kinematics, Saccades"]
+    Media --> Opt["2. Physical: Corneal Specular Reflection, 3D Lambertian Lighting"]
+    Media --> Sen["3. Sensor: Camera PRNU Noise Fingerprint, CFA Bayer Demosaicing"]
+    Media --> Spe["4. Spectral: Azimuthal FFT Power Law, Up-Sampling Grid Artifacts"]
+    Media --> Acu["5. Acoustic: Vocal Tract Formants, Neural Vocoder Phase Jumps"]
+    Media --> Mul["6. Multimodal: Phoneme-Viseme Cross-Modal Dissonance (SyncNet)"]
+    Media --> Att["7. Attribution: DIRE Latent Inversion, GAN Fingerprints"]
+    Media --> C2PA["8. Provenance: Cryptographic C2PA Manifest & Hardware Roots of Trust"]
+```
 
-**Key papers powering DeepShield's design:**
-
-- [FaceForensics++ (Rössler et al., ICCV 2019)](https://arxiv.org/abs/1901.08971) — primary visual benchmark
-- [Universal Fake Detectors (Ojha et al., CVPR 2023)](https://arxiv.org/abs/2302.10174) — CLIP cross-generator baseline
-- [DIRE (Wang et al., ICCV 2023)](https://arxiv.org/abs/2303.09295) — diffusion reconstruction error comparison
-- [Defense via Whisper Features (Kawa et al., Interspeech 2023)](https://arxiv.org/abs/2305.15049) — audio foundation architecture
-- [AASIST (Jung et al., ICASSP 2022)](https://arxiv.org/abs/2110.01200) — audio spectro-temporal graph baseline
-- [FakeAVCeleb (Khalid et al., NeurIPS 2021)](https://arxiv.org/abs/2108.05080) — multimodal 4-quadrant benchmark
-- [DeepfakeBench (Yan et al., NeurIPS 2023)](https://arxiv.org/abs/2307.01426) — unified benchmark framework
-
-→ [Complete literature review with all comparison tables](research/literature_review.md)  
-→ [Full papers directory with local PDF archive](research/papers/PAPERS_DIRECTORY.md)
+→ [Read the complete Multi-Layer Forensic Science Treatise](research/forensics_and_detection.md)
 
 ---
 
-## Research Gaps & Hypotheses
+## 🛡️ Enterprise, Journalist & Victim Defense Playbooks
 
-Five systemic gaps identified from 53-paper synthesis, four formally tested:
+Actionable standard operating procedures (SOPs) ready for operational deployment:
+- **Enterprise Anti-Impersonation SOP:** Real-time video conferencing challenge-response procedures:
+  - **The 90-Degree Turn Test:** Forces extreme profile yaw where 2D face-swap landmark tracking collapses.
+  - **Hand Occlusion Sweep:** Waving fingers across the face breaks generative inpainting models, causing severe warping.
+  - **Dynamic Unscripted Dialogue:** Bypasses scripted voice conversion soundboards.
+  - **Anti-Injection:** Blocking virtual camera loopbacks (`v4l2loopback`, `OBS-VirtualCam`).
+- **Journalist 6-Stage Forensic Verification Protocol:** Ingestion hashing → Reverse search → Compression ELA → Biological/corneal checks → Audio spectrograms → Tool corroboration.
+- **Victim Protection & NCII Emergency Response:** Chain-of-custody evidence preservation, **[StopNCII.org](https://stopncii.org)** and **[Take It Down](https://takeitdown.ncmec.org)** cryptographic hash submission, and formal DEFIANCE Act platform takedown notices.
 
-| ID | Gap | Hypothesis | Status |
-|:---|:---|:---|:---:|
-| **H₁** | Cross-generator frequency fragility | Learnable Gabor residuals + gated cross-attention will improve AUC by ≥10% over spatial-only baseline under JPEG compression | ✅ **Validated** |
-| **H₂** | Codec-induced audio anti-spoofing collapse | Foundation Whisper encoder + codec augmentation will reduce EER by ≥35% on in-the-wild audio vs. AASIST baseline | ✅ **Validated** |
-| **H₃** | Multimodal modality dominance & single-stream failure | Decoupled asymmetric fusion with dissonance penalty will outperform joint concat by ≥12% balanced accuracy on RF quadrant | ✅ **Validated** |
-| **H₄** | Probability overconfidence & miscalibration | Temperature scaling will reduce ECE below 4% and FPR95 by ≥25% without backbone retraining | ✅ **Validated** |
-| **Gap 5** | Static evaluation vs. continuous drift | Open research direction for continual learning with human-in-the-loop audit gates | 🔬 **Future Work** |
-
-→ [Full hypothesis specifications with experimental designs and falsification criteria](research/research_gaps.md)
-
----
-
-## Model & Dataset Selection
-
-### Candidate Models Evaluated
-
-**Visual:** EfficientNet-B0, XceptionNet, UniversalFakeDetect (CLIP ViT-L/14), NPR  
-**Audio:** LFCC-LCNN, RawNet2, WhisperSpecRNet, AASIST  
-**Multimodal:** Calibrated Late Fusion, AVOiD-DF, Audio-Visual Anomaly Transformer, Cross-Attention Drop-Path
-
-→ [Full 12-model comparison matrix with VRAM, latency, and feasibility analysis](research/model_comparison.md)
-
-### Datasets Used
-
-**Image:** FaceForensics++ (c23), Celeb-DF v2, WildDeepfake, GenImage, CIFAKE  
-**Audio:** ASVspoof 2019 LA, ASVspoof 2021 DF, WaveFake, In-The-Wild Audio Deepfake  
-**Multimodal:** FakeAVCeleb (4-quadrant), DFDC
-
-→ [Full dataset analysis with zero-leakage partition protocols and storage budgets](research/dataset_analysis.md)
+→ [Read the complete Defense Playbooks & Incident Response SOPs](research/defense_playbooks_and_incident_response.md)
 
 ---
 
-## Calibration & Trustworthy AI
-
-### Temperature Scaling
-
-$$\min_{T>0}\; -\sum_{i=1}^{N_\text{val}}\left[y_i \ln\sigma(z_i/T) + (1-y_i)\ln(1-\sigma(z_i/T))\right]$$
-
-| Model | Learned Temperature $T$ | Post-Calibration Brier Score |
-|:---|:---:|:---:|
-| AdaptiveSpatialFrequencyDetector | 1.421 | 0.1077 |
-| WhisperSpecRNet | 1.411 | 0.0471 |
-
-### 95% Wilson Confidence Intervals
-
-$$\text{CI}_{95} = \frac{p + \frac{z^2}{2N} \pm z\sqrt{\frac{p(1-p)}{N} + \frac{z^2}{4N^2}}}{1+\frac{z^2}{N}}, \quad z=1.96$$
-
-Every prediction includes statistically rigorous bounds rather than a single point estimate.
-
----
-
-## Project Structure
+## 🗃️ Repository Structure
 
 ```
 deepfake/
+├── README.md                                  ← Primary Navigation Hub (You Are Here)
+├── LICENSE                                    ← MIT License
+├── requirements.txt                           ← Research & PDF Processing Dependencies
 │
-├── README.md                           ← You are here — primary navigation hub
-│
-├── research/                           ← All research intelligence (read on GitHub)
-│   ├── literature_review.md            ← 53-paper synthesis with comparison tables
-│   ├── research_gaps.md                ← H1–H4 formal hypotheses & experimental designs
-│   ├── model_comparison.md             ← 12 candidate architectures (VRAM/latency matrix)
-│   ├── dataset_analysis.md             ← 11 datasets with zero-leakage partition protocols
-│   ├── paper_comparison.md             ← Invariance & limitation comparison matrix
-│   └── papers/
-│       ├── PAPERS_DIRECTORY.md         ← Full annotated catalog of all 53 papers
-│       ├── papers_catalog.json         ← Machine-readable metadata
-│       └── pdfs/                       ← 53 locally archived full-text PDFs (~211.5 MB)
-│
-├── docs/                               ← Technical documentation
-│   ├── paper_draft.md                  ← Conference preprint (IEEE/CVF CVPR / ACM MM)
-│   ├── evaluation_report.md            ← Stage 3–5 empirical benchmark report
-│   ├── architecture.md                 ← Formal system design specification
-│   ├── experiment_protocol.md          ← Mathematical metric definitions & protocols
-│   ├── implementation_decisions.md     ← Architecture Decision Records (ADR 01–04)
-│   └── roadmap.md                      ← Phased delivery schedule
-│
-├── experiments/                        ← ML training & evaluation code
-│   ├── image/                          ← Stage 3: Image detector training & benchmarks
-│   ├── audio/                          ← Stage 4: Audio detector training & benchmarks
-│   └── multimodal/                     ← Stage 5: Multimodal fusion & evaluation
-│
-├── app/
-│   └── engine/                         ← Inference engine (image, audio, multimodal)
-│
-├── requirements.txt
-├── Dockerfile
-└── docker-compose.yml
+└── research/                                  ← Comprehensive Deepfake Research Compendium
+    ├── taxonomy_and_ontology.md               ← Master 7-layer stack, modality & threat taxonomy
+    ├── generation_technologies.md             ← Creation mechanisms: DFL, LivePortrait, DiT, VALL-E, RVC
+    ├── forensics_and_detection.md             ← Forensic science: rPPG, corneal, PRNU, CFA, DIRE
+    ├── threat_matrix_and_case_studies.md      ← Real-world incidents ($25.6M heist, Biden robocall, coups)
+    ├── legal_regulatory_and_policy.md         ← Global laws: DEFIANCE Act, EU AI Act, CAC, ELVIS Act
+    ├── watermarking_and_provenance.md         ← C2PA standard, hardware trust, SynthID, PhotoGuard
+    ├── psychology_and_societal_impact.md      ← Human detection failure, AI hyperrealism, SIFT method
+    ├── defense_playbooks_and_incident_response.md ← Enterprise, journalist, and victim SOPs
+    ├── deepfake_tools_directory.md            ← Comprehensive directory of tools, engines & benchmarks
+    ├── literature_review.md                   ← 53 academic papers synthesized across 8 domains
+    ├── research_gaps.md                       ← H1–H4 formal hypotheses & experimental designs
+    ├── model_comparison.md                    ← 12 candidate architectures (VRAM/latency matrix)
+    ├── dataset_analysis.md                    ← 11 benchmark datasets with zero-leakage protocols
+    ├── paper_comparison.md                    ← Invariance & limitation side-by-side matrix
+    ├── update_registry.py                     ← Literature catalog compilation tool
+    ├── compile_papers_metadata.py             ← Paper metadata extractor
+    ├── download_expanded_papers.py            ← Full-text PDF retrieval engine
+    ├── papers_data_compiled.json              ← Canonical structured paper database
+    └── papers/
+        ├── PAPERS_DIRECTORY.md                ← Full annotated catalog of all 53 papers
+        ├── papers_catalog.json                ← Machine-readable catalog
+        └── pdfs/                              ← 53 locally archived full-text PDFs (~211.5 MB)
 ```
 
 ---
 
-## Quickstart
+## ⚡ Quickstart
 
 ```bash
-# Clone
+# Clone repository
 git clone https://github.com/Omnifex-Agency/deepfake.git
 cd deepfake
 
-# Install
+# Install research & parsing dependencies
 pip install -r requirements.txt
 
-# Run Stage 3 image experiments
-python experiments/image/train_and_evaluate.py
-
-# Run Stage 4 audio experiments  
-python experiments/audio/train_and_evaluate.py
-
-# Run Stage 5 multimodal evaluation
-python experiments/multimodal/train_and_evaluate.py
-```
-
-**Docker:**
-```bash
-docker-compose up --build
+# Verify and update the local literature catalog
+python research/update_registry.py
 ```
 
 ---
 
-## Preprint Citation
+## 📖 Citation
+
+If you utilize this research compendium or literature catalog in your scholarly research, please cite:
 
 ```bibtex
-@article{deepshield2026,
-  author    = {DeepShield AI Research Collective},
-  title     = {DeepShield: Codec-Invariant Multimodal Deepfake Detection via
-               Learnable Gabor Residuals and Decoupled Asymmetric Risk Fusion},
-  journal   = {IEEE/CVF CVPR / ACM Multimedia Working Preprint},
+@article{deepfake_research_collective_2026,
+  author    = {Deepfake Research Collective},
+  title     = {The Comprehensive Deepfake Compendium: Generative Architectures, Multi-Layer
+               Forensics, Threat Intelligence, Legal Governance, and Provenance Standards},
+  journal   = {Global Deepfake Research Initiative / Working Research Compendium},
   year      = {2026},
   url       = {https://github.com/Omnifex-Agency/deepfake}
 }
 ```
 
-→ [Full paper draft](docs/paper_draft.md) · [All 53 BibTeX citations](research/papers/PAPERS_DIRECTORY.md)
-
 ---
 
-## License
+## 📄 License
 
-Released under the **[MIT License](LICENSE)**.  
-Developed as a publication-grade AI/ML research system for multimodal deepfake detection.
+This research repository is released under the **[MIT License](LICENSE)**.  
+Dedicated to advancing open scientific research, media authenticity, public education, and digital human rights.

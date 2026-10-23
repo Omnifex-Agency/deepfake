@@ -1,4 +1,4 @@
-# DeepShield AI — Forensic Literature Repository & Paper Directory
+# Deepfake Research Collective — Forensic Literature Repository & Paper Directory
 
 > **Archive Status:** 53 Full-Text Academic Papers Downloaded Locally (~211.5 MB total PDF archive).
 > All papers are categorized according to academic domain, indexing verified arXiv identifiers, conference venues, direct local PDF endpoints, official code repositories, reported benchmark metrics, and known research limitations.

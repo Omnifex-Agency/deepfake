@@ -1,18 +1,9 @@
-# DeepShield AI — ML Research & Experiment Dependencies
+# Deepfake Research Collective — Research & Processing Dependencies
 
-# Core ML / Deep Learning
-torch>=2.0.0
-torchvision>=0.15.0
-torchaudio>=2.0.0
-
-# Scientific Computing
-scipy>=1.10.0
+# Scientific Computing & Data Processing
 numpy>=1.24.0
-scikit-learn>=1.2.0
+scipy>=1.10.0
 
-# Image & Audio Processing
-pillow>=9.5.0
-opencv-python>=4.7.0
-
-# PDF / Document Parsing (for local paper reading)
+# Document & PDF Processing (for local paper catalog)
 pypdf>=3.0.0
+requests>=2.28.0

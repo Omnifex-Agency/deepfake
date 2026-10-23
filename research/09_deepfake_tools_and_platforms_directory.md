@@ -78,9 +78,35 @@ graph TD
 - **In-The-Wild Audio Deepfake (2022):** Real-world audio clips of politicians, celebrities, and business leaders harvested from public social media.
 
 ### 4.3 Multimodal Audio-Visual Benchmarks
-- **FakeAVCeleb (NeurIPS 2021):** 21,566 video clips systematically partitioned into a **4-quadrant manipulation matrix**:
+- **FakeAVCeleb (NeurIPS 2021):** 21,566 video clips systematically partitioned into a **4-quadrant manipulation matrix** (co-developed with Indian researcher representation):
   - Real Video + Real Audio (RR)
   - Fake Video + Real Audio (FR)
   - Real Video + Fake Audio (RF)
   - Fake Video + Fake Audio (FF)
 - **Deepfake Detection Challenge (DFDC) (Facebook/Kaggle 2020):** Over 100,000 clips with diverse lighting conditions, head angles, background noise, and actors.
+
+### 4.4 Indian & South Asian Benchmarks & Indic Datasets
+- **IndiFake (Indian Deepfake Dataset):**
+  - **Focus:** Addresses extreme ethnic representation bias in Western datasets by capturing **South Asian facial phenotypes** across Fitzpatrick Skin Types IV to VI.
+  - **Contents:** Over 15,000 facial videos reflecting typical Indian lighting conditions, diverse skin undertones, regional facial hair styles (moustaches, beards), and cultural adornments (bindis, tilaks, turbans, nose pins).
+  - **Manipulations:** Synthesized via DeepFaceLab, SimSwap, and LivePortrait to benchmark cross-ethnic generalization.
+- **Bhashini IndicSpeech & Multilingual Audio Spoofing Benchmarks:**
+  - **Origin:** Developed under the Ministry of Electronics & IT (MeitY) **National Language Translation Mission (NLTM)**.
+  - **Linguistic Coverage:** 22 official Indian languages including Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, Malayalam, Gujarati, and Punjabi.
+  - **Significance:** First comprehensive benchmark evaluating speech anti-spoofing against zero-shot voice cloning in tonal, retroflex, and aspirated Indic language acoustics.
+- **FakeAVCeleb South Asian & Indian Politician Subsets:**
+  - Isolated evaluation partitions containing Indian political figures, multilingual campaign dubs, and Bollywood celebrity interviews to test cross-modal phoneme-viseme alignment in code-mixed languages ("Hinglish").
+
+---
+
+## 5. Indian Academic Research Laboratories & Government Initiatives
+
+| Institution / Lab | Principal Investigators / Leaders | Core Forensic Focus | Notable Contributions |
+|:---|:---|:---|:---|
+| **IIT Jodhpur — Image Analysis & Biometrics Lab (IAB)** | Prof. Richa Singh, Prof. Mayank Vatsa | Biometrics, Facial Deepfakes, Adversarial Attacks | Pioneering Indian research in face anti-spoofing, ethnic bias audits, and explainable AI forensics |
+| **IIT Ropar — Multimodal AI Laboratory** | Prof. Abhinav Dhall | Multimodal Audio-Visual Deepfakes, Emotion Forensics | Co-authors of FakeAVCeleb (NeurIPS 2021); phoneme-viseme desynchronization research |
+| **IIIT Delhi — Infosys Centre for AI** | Forensics & Security Faculty Group | Digital Image Forensics, PRNU, Social Media Manipulation | Forensics on compressed WhatsApp/Telegram forward media |
+| **IISc Bangalore — SPIRE Lab (Signal Processing & Speech)** | Prof. Prasanta Kumar Ghosh | Indic Speech Processing, Voice Biometrics | Acoustic speech anti-spoofing for regional Indian dialects |
+| **I4C (Indian Cyber Crime Coordination Centre, MHA)** | Ministry of Home Affairs, Govt. of India | National Threat Intelligence, Fraud Mitigation | Operation of 1930 Helpline and National Cybercrime Reporting Portal |
+| **Digital India Bhashini Division (MeitY)** | Government of India | Open Indic Speech AI Ecosystem | High-quality open-source Indic acoustic datasets and translation models |
+

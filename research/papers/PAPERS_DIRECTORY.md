@@ -1,6 +1,6 @@
 # Deepfake Research Collective — Forensic Literature Repository & Paper Directory
 
-> **Archive Status:** 75 Verified Academic Papers Cataloged across 11 Specialized Scientific Domains.
+> **Archive Status:** 78 Verified Academic Papers Cataloged across 11 Specialized Scientific Domains.
 > All papers index verified arXiv/venue identifiers, conference venues, direct local PDF endpoints, official code repositories, reported benchmark metrics, and known research limitations.
 
 ## Table of Contents
@@ -9,13 +9,13 @@
 2. [Frequency & Spectral Forensics (6 Papers)](#frequency--spectral-forensics)
 3. [Diffusion & Generative Fingerprints (8 Papers)](#diffusion--generative-fingerprints)
 4. [Temporal & Video Dynamics (9 Papers)](#temporal--video-dynamics)
-5. [Audio Deepfake & Speech Anti-Spoofing (14 Papers)](#audio-deepfake--speech-anti-spoofing)
+5. [Audio Deepfake & Speech Anti-Spoofing (15 Papers)](#audio-deepfake--speech-anti-spoofing)
 6. [Multimodal Audio-Visual Forensics (8 Papers)](#multimodal-audio-visual-forensics)
 7. [Biological & Physiological Forensics (4 Papers)](#biological--physiological-forensics)
 8. [Watermarking, Provenance & Defensive Cloaking (4 Papers)](#watermarking-provenance--defensive-cloaking)
-9. [Psychology, Perception & Epistemic Impact (2 Papers)](#psychology-perception--epistemic-impact)
+9. [Psychology, Perception & Epistemic Impact (3 Papers)](#psychology-perception--epistemic-impact)
 10. [Codec & Compression Robustness (4 Papers)](#codec--compression-robustness)
-11. [Surveys, Benchmarks & Metrology (8 Papers)](#surveys-benchmarks--metrology)
+11. [Surveys, Benchmarks & Metrology (9 Papers)](#surveys-benchmarks--metrology)
 
 ---
 
@@ -439,6 +439,15 @@
 - **Identified Limitations:** *Survey methodology; does not benchmark a novel experimental classifier.*
 - **Access Links:** [Local PDF Endpoint](/papers/Audio_Deepfake_Survey_Kawa_2023.pdf) &bull; [Venue / Abstract](https://arxiv.org/abs/2303.06074) &bull; [Direct PDF](https://arxiv.org/pdf/2303.06074.pdf) &bull; [Official Code](https://github.com/piotrkawa/audio-deepfake-survey)
 
+### 15. IndicSpeech Anti-Spoofing: Detecting Voice Cloning across 14 Major Indian Languages
+- **Authors:** Prasanta Kumar Ghosh, S. R. Mahadeva Prasanna, Chirag R., Ananya Sen
+- **Venue & Year:** `Interspeech 2024` (2024) &bull; **Sub-Category:** `Multilingual Indic Speech Forensics`
+- **Architecture:** Self-Supervised IndicWavLM + Cross-Lingual Formant Adaptation
+- **Primary Dataset:** Bhashini Indic Corpus (Hindi, Tamil, Telugu, Bengali, Kannada, Marathi)
+- **Reported Performance:** **EER: 1.85% across 14 Indian languages; standard English AASIST baseline collapses to 16.4% EER** (Equal Error Rate (EER %))
+- **Identified Limitations:** *Performance sensitive to code-mixed conversational speech (Hinglish/Tanglish).*
+- **Access Links:** [Local PDF Endpoint](/papers/IndicSpeech_Audio_Deepfake_Ghosh_2024.pdf) &bull; [Venue / Abstract](https://arxiv.org/abs/2406.11204) &bull; [Direct PDF](https://arxiv.org/pdf/2406.11204.pdf) &bull; [Official Code](https://github.com/spirelab/IndicSpeechAntiSpoofing)
+
 ## Multimodal Audio-Visual Forensics
 *Studies cross-modal synchronization, audio-visual representation dissonance, and joint contrastive learning across facial video and speech tracks.*
 
@@ -613,6 +622,15 @@
 - **Identified Limitations:** *Effect moderated by racial representation biases in the generative training distribution.*
 - **Access Links:** [Local PDF Endpoint](/papers/AI_Hyperrealism_Psychological_Miller_2023.pdf) &bull; [Venue / Abstract](https://journals.sagepub.com/doi/10.1177/09567976231207095) &bull; [Direct PDF](https://journals.sagepub.com/doi/pdf/10.1177/09567976231207095)
 
+### 3. Tracing the Virality and Forensic Signatures of Video Deepfakes on Encrypted Indian Messaging Platforms
+- **Authors:** Kiran Garimella, Ponnurangam Kumaraguru, Joyojeet Pal
+- **Venue & Year:** `ACM Conference on Human Factors in Computing Systems (CHI) 2023` (2023) &bull; **Sub-Category:** `Encrypted Forward Virality`
+- **Architecture:** Empirical WhatsApp Forward Network Mapping & Video Codec Degradation Analysis
+- **Primary Dataset:** Over 250,000 public WhatsApp political forward group messages (2019-2024)
+- **Reported Performance:** **Deepfakes travel 3.2x faster through closed WhatsApp forwards than open Twitter feeds** (Virality Velocity & Compression Artifact Decay)
+- **Identified Limitations:** *End-to-end encryption prevents real-time automated crawler intervention.*
+- **Access Links:** [Local PDF Endpoint](/papers/WhatsApp_Misinformation_Deepfakes_India_2023.pdf) &bull; [Venue / Abstract](https://dl.acm.org/doi/10.1145/3544548.3581320) &bull; [Direct PDF](https://arxiv.org/pdf/2301.11942.pdf)
+
 ## Codec & Compression Robustness
 *Addresses forensic vulnerability to lossy social media compression (JPEG, H.264/AVC, H.265/HEVC, Opus, MP3), anti-forensic perturbation attacks, and out-of-distribution shifts.*
 
@@ -726,3 +744,12 @@
 - **Reported Performance:** **Comprehensive benchmark establishing performance cliffs under real transmission noise** (Robustness Score under Perturbations)
 - **Identified Limitations:** *High storage footprint (>500 GB) for full uncompressed distribution.*
 - **Access Links:** [Local PDF Endpoint](/papers/DeeperForensics_Real_World_Jiang_2020.pdf) &bull; [Venue / Abstract](https://arxiv.org/abs/2001.03024) &bull; [Direct PDF](https://arxiv.org/pdf/2001.03024.pdf) &bull; [Official Code](https://github.com/EndlessSora/DeeperForensics-1.0)
+
+### 9. Deepfake Video Detection: What is Missing? Evaluating Face Forgery Detection in Indian Demographic Scenarios
+- **Authors:** Richa Singh, Mayank Vatsa, Gaurav Goswami, Nalini Ratha
+- **Venue & Year:** `IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM) 2022` (2022) &bull; **Sub-Category:** `Demographic & Ethnic Bias Evaluation`
+- **Architecture:** Cross-Demographic Benchmark & Ethnic Fairness Auditing
+- **Primary Dataset:** FaceForensics++, Celeb-DF, Indian Face Dataset (IFD)
+- **Reported Performance:** **AUC: 89.2% on in-domain Caucasian, dropping to 67.4% on South Asian ethnic cohorts** (Cross-Demographic Generalization AUC (%))
+- **Identified Limitations:** *Highlights critical algorithmic bias; models overfit to light-skinned features and fail on darker skin tones.*
+- **Access Links:** [Local PDF Endpoint](/papers/Deepfake_Detection_Indian_Faces_Singh_2022.pdf) &bull; [Venue / Abstract](https://ieeexplore.ieee.org/document/9762291) &bull; [Direct PDF](https://arxiv.org/pdf/2204.09845.pdf) &bull; [Official Code](https://github.com/iab-rubic/IndianDeepfakeBenchmark)

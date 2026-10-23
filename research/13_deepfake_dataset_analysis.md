@@ -94,3 +94,41 @@ flowchart TD
   - **Total Projected Storage:** ~79.5 GB (well within the 297 GB free disk capacity).
 - **Sanity Check Dataset for Initial POC:**
   - Before processing full multi-gigabyte video archives, **CIFAKE** (~100 MB) and a 1,000-clip audio slice from **WaveFake** (~250 MB) will be used to dry-run data loaders, logging, and metrics in under 5 minutes without risk of storage exhaustion.
+
+---
+
+## 6. Demographic, Ethnic & Linguistic Representation Bias: The Indian & South Asian Gap
+
+A critical blind spot in modern deepfake benchmarking is the **severe under-representation of South Asian (Indian subcontinent) populations** in leading public datasets.
+
+```mermaid
+graph TD
+    Bias["Representation Gap in Western Benchmarks"]
+    Bias --> Pheno["1. Phenotypic Bias (Fitzpatrick IV-VI Under-Represented in FF++ / Celeb-DF)"]
+    Bias --> BioSig["2. Melanin Attenuation in rPPG (False Positives on Darker Skin)"]
+    Bias --> Adorn["3. Cultural Adornments (Bindis, Turbans, Tilaks trigger boundary false alarms)"]
+    Bias --> Ling["4. Indic Linguistic Gap (ASVspoof lacks retroflex / aspirated Indic phonetics)"]
+```
+
+### 6.1 Phenotypic & Visual Bias in Western Datasets
+- **Demographic Skew:** Over **78%** of subjects in FaceForensics++ and Celeb-DF v2 belong to Fitzpatrick Skin Types I–III (Caucasian and East Asian). South Asian individuals (Fitzpatrick Types IV–VI) comprise less than 6% of cataloged identities.
+- **Forensic Failure Modes on Indian Faces:**
+  1. **rPPG Melanin Optical Absorption:** Melanin in darker epidermis exhibits higher optical extinction coefficients across the green spectrum ($500\text{--}600\text{ nm}$), attenuating pulsatile AC blood volume signals by up to $18\text{ dB}$ compared to lighter skin. Naive rPPG models misclassify genuine South Asian videos as synthetic due to low signal-to-noise ratio (SNR).
+  2. **Facial Adornments & Hair Invariants:** Indian cultural adornments—such as forehead *bindis*, *tilaks*, *sindoor*, nasal piercings (*nath*), and *turbans (dastars)*—frequently fall within the convex hull of facial landmark extractors (e.g. MediaPipe, Dlib). Standard blending detectors misclassify the sharp spatial color gradients around bindis or turbans as face-swap blending seams.
+
+### 6.2 The Indic Linguistic & Acoustic Anti-Spoofing Gap
+- **Zero Representation in Global Challenges:** The gold-standard ASVspoof 2019/2021 and WaveFake corpora are composed **100% of English and Japanese speech**. None of the 22 Scheduled Indian languages are represented.
+- **Acoustic Phonetics of Indic Speech:**
+  - **Retroflex Consonants:** Indian languages feature distinctive retroflex stops (/ʈ/, /ɖ/) and nasals (/ɳ/) produced by curling the tip of the tongue against the hard palate.
+  - **Aspirated Plosives:** Contrastive aspiration pairs (e.g., /k/ vs /kʰ/, /p/ vs /pʰ/, /t̪/ vs /t̪ʰ/) produce high-velocity acoustic bursts and delayed voice onset times (VOT).
+  - **The Risk:** Audio anti-spoofing detectors trained exclusively on English mistake the sudden energy bursts of authentic aspirated Indic phonemes for vocoder phase glitches or synthetic audio splicing.
+
+### 6.3 Dedicated Indian Benchmarks & Mitigation Protocol
+
+| Benchmark / Dataset | Focus & Modality | Target Demographics | Linguistic Scope | Strategic Purpose in Research |
+|:---|:---|:---|:---|:---|
+| **IndiFake** | Visual Deepfakes (Face Swap & Reenactment) | South Asian ethnic phenotypes (Fitzpatrick IV–VI) | Multi-regional Indian actors | Audits cross-ethnic generalization; prevents racial performance bias |
+| **Bhashini IndicSpeech Corpus** | Acoustic Anti-Spoofing & Voice Cloning | Native speakers across 22 Scheduled Languages | Hindi, Tamil, Telugu, Bengali, Kannada, Marathi, Gujarati, etc. | Benchmarks speech detectors against zero-shot voice cloning in Indic phonetics |
+| **FakeAVCeleb (Indic Subset)** | Multimodal Audio-Visual Synchronization | Indian public figures and politicians | English, Hindi, and Code-Mixed "Hinglish" | Evaluates viseme-phoneme sync on Indian facial structures and speech cadence |
+| **IIT Jodhpur South Asian Biometric Benchmark** | High-Resolution Facial & Iris Forensics | Diverse pan-Indian demographic cohorts | Controlled indoor/outdoor lighting | Calibrates multi-spectral rPPG and PRNU under tropical illumination |
+

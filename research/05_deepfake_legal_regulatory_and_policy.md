@@ -138,16 +138,102 @@ China was the first global jurisdiction to implement binding, comprehensive admi
 
 ---
 
-## 5. Global Statutory Comparisons
+---
+
+## 5. India: Comprehensive Statutory, Regulatory & Judicial Framework
+
+India possesses a multi-layered legal regime governing deepfakes, spanning the **Information Technology Act, 2000**, the **IT Intermediary Rules, 2021 (with MeitY Advisories)**, the newly codified **Bharatiya Nyaya Sanhita (BNS), 2023**, and landmark **High Court Personality Rights Jurisprudence**.
+
+```mermaid
+graph TD
+    IndiaLaw["Indian Deepfake Legal Framework"]
+    IndiaLaw --> ITAct["1. IT Act, 2000 (Sec 66D Personation, Sec 66E Privacy, Sec 67/67A Obscenity)"]
+    IndiaLaw --> Rules["2. IT Intermediary Rules, 2021 (Rule 3(2)(b) 24h Takedown & MeitY Advisories)"]
+    IndiaLaw --> BNS["3. Bharatiya Nyaya Sanhita, 2023 (Sec 318(4) Personation, Sec 336 Forgery)"]
+    IndiaLaw --> DPDP["4. DPDP Act, 2023 (Biometric Personal Data, up to ₹250 Cr Penalties)"]
+    IndiaLaw --> Courts["5. Judicial Precedents (Delhi HC: Anil Kapoor, Amitabh Bachchan Personality Injunctions)"]
+```
+
+### 5.1 The Information Technology Act, 2000
+- **Section 66D (Cheating by Personation Using Computer Resource):**
+  - Criminalizes using any computer resource, communication device, or generative AI pipeline to cheat by impersonating another individual.
+  - **Penalty:** Imprisonment for a term up to **3 years** and a fine up to **₹1,00,000**.
+- **Section 66E (Violation of Bodily Privacy):**
+  - Punishes the intentional capturing, publishing, or transmitting of images of private areas of any person without consent.
+  - **Penalty:** Imprisonment up to **3 years** or a fine up to **₹2,00,000**, or both.
+- **Sections 67 & 67A (Obscene & Sexually Explicit Acts in Electronic Form):**
+  - Applied directly to non-consensual deepfake pornography (NCII). First conviction carries up to **5 years imprisonment** and ₹10 Lakhs fine; subsequent convictions carry up to **7 years imprisonment**.
+
+---
+
+### 5.2 IT (Intermediary Guidelines) Rules, 2021 & MeitY Statutory Advisories
+
+#### The 24-Hour Mandatory Takedown Mandate (Rule 3(2)(b))
+- Online intermediaries (Meta, YouTube, X, Telegram) must, within **24 hours** from the receipt of a complaint, remove or disable access to any material that exposes private areas of an individual, shows the individual in full/partial nudity, or **depicts the individual in any sexual act or conduct, or where the individual is impersonated in an electronic form**.
+
+#### Section 79 "Safe Harbor" Immunity Stripping
+- Under Section 79(1) of the IT Act, platforms enjoy legal immunity from user-generated content.
+- However, if an intermediary fails to observe due diligence under Rule 3 or fails to take down flagged deepfakes within statutory timelines after receiving government or court notice, **Safe Harbor immunity is forfeited**, making platform executives directly liable for prosecution under Indian criminal law.
+
+#### MeitY Deepfake Advisories (2023–2024)
+- **November 7, 2023 Advisory:** Issued immediately after the Rashmika Mandanna incident, mandating platforms clearly communicate prohibited content categories (specifically synthetic impersonation) to users during sign-up and through periodic terms updates.
+- **December 26, 2023 Advisory:** Directed platforms to deploy automated technical algorithms to proactively detect and prevent the dissemination of deepfakes and misinformation.
+- **March 1 & March 15, 2024 Advisories:** Mandated explicit visual labeling of AI-generated content, unique metadata tagging for provenance, and strict compliance during general elections.
+
+---
+
+### 5.3 Bharatiya Nyaya Sanhita (BNS), 2023 (In effect from July 1, 2024)
+
+The BNS replaced the colonial Indian Penal Code (IPC) of 1860, codifying specialized provisions applicable to synthetic media:
+
+| Offense | BNS Section | Corresponding Old IPC Section | Legal Application to Deepfakes | Maximum Sentence |
+|:---|:---:|:---:|:---|:---:|
+| **Cheating by Personation** | **Section 318(4)** | Section 419 | Creating synthetic audio/video impersonating executives, officials, or relatives | Up to 5 years imprisonment + Fine |
+| **Forgery for Harming Reputation** | **Section 336** | Section 469 | Fabricating political or celebrity deepfakes intending to harm character or standing | Up to 3 years imprisonment + Fine |
+| **Criminal Defamation** | **Section 356** | Section 499 / 500 | Disseminating deepfakes alleging false criminal acts or corruption | Up to 2 years imprisonment / Community service |
+| **Insulting Modesty of a Woman** | **Section 79** | Section 509 | Synthesizing non-consensual deepfakes, morphs, or unnudified images of women | Up to 3 years imprisonment + Fine |
+| **Promoting Enmity between Groups**| **Section 196** | Section 153A | Fabricating deepfake communal speeches or altered religious statements | Up to 3 to 5 years imprisonment |
+
+---
+
+### 5.4 Digital Personal Data Protection Act, 2023 (DPDP Act)
+- Defines biometric data as personal data.
+- Generative AI models trained by scraping photographs of Indian citizens without express, unconditional consent violate data processing mandates.
+- The Data Protection Board of India (DPBI) is empowered to impose civil penalties up to **₹250 Crores (US$30 Million)** for systemic data fiduciary non-compliance.
+
+---
+
+### 5.5 Landmark Judicial Precedents: Personality & Publicity Rights
+
+The Delhi High Court has established trailblazing international jurisprudence protecting Indian celebrities and citizens against generative AI misappropriation:
+
+#### A. Anil Kapoor v. Simply Life India & Ors (CS(COMM) 652/2023)
+- **Ruling Date:** September 20, 2023 (Justice Prathiba M. Singh).
+- **Core Holding:** The Delhi High Court granted an unprecedented **omnibus ex-parte interim injunction** restraining defendants, artificial intelligence tool operators, and the public from using actor Anil Kapoor's:
+  - Name, photograph, likeness, and image.
+  - Distinctive voice and acoustic timbre.
+  - Iconic catchphrase (*"jhakaas"*).
+  - Any digital avatar, deepfake, or generative face-swap for commercial or derogatory purposes without his prior license.
+- **Judicial Significance:** Specifically prohibited generative AI face-swapping apps and voice changers from incorporating his biometric likeness into their models.
+
+#### B. Amitabh Bachchan v. Rajat Nagi & Ors (CS(COMM) 819/2022)
+- First landmark Indian ruling protecting an individual's right of publicity and personality rights against unauthorized voice-cloning, phone ringtones, and synthetic merchandise.
+
+#### C. Jackie Shroff v. The Peppy Store & Ors (2024)
+- Affirmed that celebrity sobriquets (*"Bhidu"*), distinctive vocal drawls, and personal mannerisms cannot be cloned or weaponized in synthetic media.
+
+---
+
+## 6. Global Statutory Comparisons
 
 | Jurisdiction | Primary Legislation | Focus / Target | Enforcement Mechanism | Top Penalty |
 |:---|:---|:---|:---|:---|
-| **United States** | DEFIANCE Act, FCC TCPA, CA AB 2655 | NCII, Robocalls, Elections | Civil lawsuits, FCC administrative fines | $150K statutory damages / $6M FCC fine |
-| **European Union** | EU AI Act (Art. 50), DSA | Transparency, Systemic Platform Risk | European AI Office, National Regulators | €35M or 7% global annual turnover |
+| **India** | IT Act (Sec 66D/66E), IT Rules (24h takedown), BNS 2023, DPDP Act | Impersonation, NCII, Electoral disinformation, Biometric privacy | MeitY, Cyber Police (IFSO), Data Protection Board | Up to 7 years prison / ₹250 Cr civil penalty / Loss of Safe Harbor |
+| **United States** | DEFIANCE Act, FCC TCPA, CA AB 2655, TN ELVIS | NCII, Robocalls, Elections, Voice IP | Civil federal lawsuits, FCC fines, State AGs | $150K statutory damages / $6M FCC fine |
+| **European Union** | EU AI Act (Art. 50 & 5), DSA, GDPR | Transparency, Systemic Platform Risk | European AI Office, National Regulators | €35M or 7% global annual turnover |
 | **China** | CAC Deep Synthesis Provisions | Social Stability, Algorithmic Control | Cyberspace Administration of China (CAC) | Service shutdown, administrative detention |
 | **United Kingdom**| Online Safety Act 2023 | NCII, Minor Protection | Ofcom, Crown Prosecution Service | Imprisonment up to 2 years for creators |
 | **South Korea** | Sexual Violence Punishment Act | NCII & Deepfake Pornography | National Police Agency Cyber Bureau | 5 to 7 years imprisonment |
-| **India** | IT Rules 2021 (2023 Amendments) | Misinformation, Impersonation | Ministry of Electronics and IT (MeitY) | Loss of safe harbor intermediary status |
 
 ---
 

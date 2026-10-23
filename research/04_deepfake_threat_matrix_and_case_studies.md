@@ -153,6 +153,63 @@ graph TD
 
 ---
 
+### Case Study 8: The Rashmika Mandanna Viral Deepfake & Delhi Police IFSO Arrest (India, 2023–2024)
+- **Date:** November 2023 – January 2024
+- **Target:** Prominent Indian actress **Rashmika Mandanna**.
+- **Incident:** A viral video showed British-Indian influencer Zara Patel entering an elevator in workout attire. An open-source face-swap tool was used to superimpose Rashmika Mandanna's face onto Patel's body.
+- **Viral Trajectory & National Outrage:** Amassed tens of millions of views across Instagram Reels, X, and WhatsApp within 24 hours. Prompted public condemnation from legendary actor Amitabh Bachchan, leading ministers, and civil society.
+- **Government & Law Enforcement Intervention:**
+  - Union Minister of State for IT **Rajeev Chandrasekhar** and the Ministry of Electronics and Information Technology (**MeitY**) issued urgent statutory advisories to all social media platforms under Rule 3(1)(b) of the IT Rules, 2021, warning of the loss of Section 79 "Safe Harbor" immunity if deepfakes were not taken down within 24 hours.
+  - The Delhi Police **IFSO (Intelligence Fusion & Strategic Operations) Unit** registered an FIR under Sections 465 (forgery), 469 (forgery for harming reputation) of IPC and Sections 66C and 66E of the IT Act.
+  - In January 2024, Delhi Police tracked down and **arrested the 24-year-old creator (Emani Naveen)** from Guntur, Andhra Pradesh, who admitted to creating the video to boost follower counts on his fan page.
+
+---
+
+### Case Study 9: The 2024 Indian Lok Sabha General Elections (World's First Multilingual AI Election)
+- **Scale:** 970 million eligible voters, 28 states, 8 major national parties, and hundreds of regional constituencies.
+- **The Dual Face of AI in Indian Democracy:**
+  1. **Authorized Multilingual Campaigning:** Both ruling and opposition parties utilized speech-to-speech translation tools (such as the government-backed *Bhashini* project) to dynamically clone prime ministerial and candidate speeches in real time into Tamil, Telugu, Malayalam, Bengali, Kannada, and Punjabi to break regional language barriers.
+  2. **Malicious Weaponized Fabrications:**
+     - **Bollywood Celebrity Forgeries:** Cloned videos of superstar actors **Aamir Khan** and **Ranveer Singh** were fabricated to show them endorsing the Indian National Congress and condemning the ruling BJP government with slogans like *"Desh ke acche din kab aayenge?"*. Both actors filed criminal police FIRs and issued public cease-and-desist declarations.
+     - **Home Minister Audio Alteration:** Manipulated audio of Union Home Minister **Amit Shah** was circulated during voting phases, falsely depicting him as proposing to abolish reservation quotas for Scheduled Castes (SC), Scheduled Tribes (ST), and Other Backward Classes (OBC). Delhi Police Special Cell and Assam Police arrested several political party social media coordinators under Section 153A (promoting enmity between groups).
+
+---
+
+### Case Study 10: The "Digital Arrest" Cybercrime Epidemic across India (2023–2026)
+- **Modus Operandi:** Transnational cybercrime syndicates (often operating from Cambodia, Myanmar, and Laos call center compounds) orchestrate sophisticated extortion schemes targeting Indian senior citizens, professionals, and retired officials.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Criminal as Cyber Syndicate (Deepfake Operator)
+    actor Victim as Indian Citizen (Elderly / Professional)
+    actor Bank as Victim Bank Account
+
+    Criminal->>Victim: IVR Robocall: "Your FedEx parcel containing MDMA narcotics was seized at Mumbai Airport"
+    Victim->>Criminal: Panics; denies sending any contraband
+    Criminal->>Victim: "Connecting you immediately to Mumbai Police Crime Branch via Skype video call"
+    Criminal->>Victim: Live video call opens showing official Police Station backdrop with Ashok Stambha & Indian Flag
+    Criminal->>Victim: Deepfake uniformed IPS Officer / CBI Inspector appears on camera with cloned voice
+    Criminal->>Victim: Displays forged arrest warrant & fake Supreme Court order signed by Chief Justice of India
+    Criminal->>Victim: "You are placed under Digital Arrest. If you disconnect, local police will storm your house."
+    Criminal->>Victim: "To prove innocence, transfer all liquid assets to RBI-verified escrow safety accounts for verification"
+    Victim->>Bank: Transfers entire life savings (₹50 Lakhs to ₹15 Crores) via RTGS/IMPS
+    Criminal->>Criminal: Funds immediately laundered across 'Mule' accounts and converted to crypto
+```
+
+- **Scale & Response:** In 2024 alone, Indian citizens lost over **₹1,200 Crores (US$145 Million)** to Digital Arrest scams. In October 2024, Prime Minister Narendra Modi addressed the nation in *Mann Ki Baat*, stating: *"There is no provision for 'Digital Arrest' in Indian law. No police officer or probe agency interrogates you over Skype or WhatsApp. Stop, Think, and Take Action on 1930."*
+
+---
+
+### Case Study 11: Posthumous AI Political Reincarnation in Tamil Nadu (2024)
+- **Context:** Tamil Nadu state politics has historically centered on iconic Dravidian leaders **M. Karunanidhi** (DMK patriarch, died 2018) and **J. Jayalalithaa** (AIADMK leader, died 2016).
+- **Incident:** During the 2024 election campaign:
+  - The DMK utilized generative AI avatars and cloned voices of Karunanidhi to appear at public rallies and congratulate his son, Chief Minister M.K. Stalin, on state policy achievements.
+  - An AI voice clone of J. Jayalalithaa was simultaneously deployed on phone calls urging AIADMK supporters to vote against the ruling party.
+- **Ethical & Epistemic Debate:** Sparked national legal debates in India regarding posthumous publicity rights, consent of legal heirs, and whether resurrecting deceased political icons to influence living voters violates the Election Commission of India's Model Code of Conduct (MCC).
+
+---
+
 ## 3. The "Liar's Dividend": Weaponizing Skepticism
 
 First articulated by legal scholars **Professors Robert Chesney and Danielle Citron** (2018), the **Liar's Dividend** describes a sinister epistemic side effect:

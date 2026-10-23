@@ -1,19 +1,16 @@
 version: '3.8'
 
 services:
-  deepshield-api:
+  deepshield-train:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: deepshield-ai
-    restart: unless-stopped
-    ports:
-      - "8000:8000"
+    container_name: deepshield-experiments
     environment:
       - PYTHONUNBUFFERED=1
-      - PORT=8000
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+    volumes:
+      - ./experiments:/app/experiments
+      - ./research:/app/research
+      - ./docs:/app/docs
+    # Override with: docker-compose run deepshield-train python experiments/audio/train_and_evaluate.py
+    command: python experiments/image/train_and_evaluate.py

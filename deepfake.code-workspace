@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "deepfake",
+			"path": "."
+		},
+		{
+			"name": "ai-ml-research-assistant",
+			"path": "../../downloads/ai-ml-research-assistant/ai-ml-research-assistant"
+		}
+	],
+	"settings": {}
+}

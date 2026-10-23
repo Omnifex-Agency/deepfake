@@ -1,0 +1,146 @@
+{
+  "baseline_naive_concat": {
+    "overall": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 0.9999999999999998,
+      "fpr_at_95_recall": 0.0,
+      "expected_calibration_error": 0.0004389382649808057,
+      "brier_score": 2.7735104627761575e-07,
+      "true_positives": 27,
+      "true_negatives": 9,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "quadrants": {
+      "RR": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.0006044164959651729,
+        "sample_count": 9
+      },
+      "FR": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.9993760387102762,
+        "sample_count": 9
+      },
+      "RF": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.9995339380370246,
+        "sample_count": 9
+      },
+      "FF": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.9999386866887411,
+        "sample_count": 9
+      }
+    },
+    "fallback_video_only": {
+      "accuracy": 0.75,
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1_score": 0.8571428571428571,
+      "macro_f1": 0.42857142857142855,
+      "roc_auc": 0.8024691358024691,
+      "pr_auc": 0.9419622091817921,
+      "fpr_at_95_recall": 1.0,
+      "expected_calibration_error": 0.15102317929267886,
+      "brier_score": 0.16832430668369114,
+      "true_positives": 27,
+      "true_negatives": 0,
+      "false_positives": 9,
+      "false_negatives": 0
+    },
+    "fallback_audio_only": {
+      "accuracy": 0.8055555555555556,
+      "precision": 0.7941176470588235,
+      "recall": 1.0,
+      "f1_score": 0.8852459016393442,
+      "macro_f1": 0.624441132637854,
+      "roc_auc": 0.8600823045267488,
+      "pr_auc": 0.954929097916738,
+      "fpr_at_95_recall": 0.6666666666666666,
+      "expected_calibration_error": 0.12214772320455974,
+      "brier_score": 0.13281224757310306,
+      "true_positives": 27,
+      "true_negatives": 2,
+      "false_positives": 7,
+      "false_negatives": 0
+    }
+  },
+  "deepshield_asymmetric_fusion": {
+    "overall": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 0.9999999999999998,
+      "fpr_at_95_recall": 0.0,
+      "expected_calibration_error": 0.0010593353460232107,
+      "brier_score": 3.038302441721135e-06,
+      "true_positives": 27,
+      "true_negatives": 9,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "quadrants": {
+      "RR": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.0034265261557367113,
+        "sample_count": 9
+      },
+      "FR": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.9995084736082289,
+        "sample_count": 9
+      },
+      "RF": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.999860578113132,
+        "sample_count": 9
+      },
+      "FF": {
+        "accuracy": 1.0,
+        "mean_confidence": 0.9998201330502828,
+        "sample_count": 9
+      }
+    },
+    "fallback_video_only": {
+      "accuracy": 0.75,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "macro_f1": 0.7333333333333334,
+      "roc_auc": 0.9094650205761317,
+      "pr_auc": 0.9715710070823269,
+      "fpr_at_95_recall": 0.5555555555555556,
+      "expected_calibration_error": 0.2500541377927826,
+      "brier_score": 0.24972508077008015,
+      "true_positives": 18,
+      "true_negatives": 9,
+      "false_positives": 0,
+      "false_negatives": 9
+    },
+    "fallback_audio_only": {
+      "accuracy": 0.75,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "macro_f1": 0.7333333333333334,
+      "roc_auc": 0.8353909465020576,
+      "pr_auc": 0.9503771721836167,
+      "fpr_at_95_recall": 0.8888888888888888,
+      "expected_calibration_error": 0.24998324388757787,
+      "brier_score": 0.24988139686890845,
+      "true_positives": 18,
+      "true_negatives": 9,
+      "false_positives": 0,
+      "false_negatives": 9
+    }
+  }
+}

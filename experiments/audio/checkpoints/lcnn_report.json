@@ -1,0 +1,63 @@
+{
+  "model_name": "lcnn",
+  "feature_type": "mel",
+  "best_val_eer": 0.0,
+  "temperature": 1.4048038721084595,
+  "test_metrics_raw": {
+    "equal_error_rate": 0.0,
+    "optimal_eer_threshold": 0.7866156101226807,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "expected_calibration_error": 0.14735977922876678,
+    "brier_score": 0.02201174208891025,
+    "true_positives": 15,
+    "true_negatives": 15,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "loss": 0.15962656140327453
+  },
+  "test_metrics_calibrated": {
+    "equal_error_rate": 0.0,
+    "optimal_eer_threshold": 0.7168119549751282,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "expected_calibration_error": 0.22243237098058066,
+    "brier_score": 0.0497472508884325,
+    "true_positives": 15,
+    "true_negatives": 15,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "history": {
+    "train_loss": [
+      0.6156283412660871,
+      0.3973811447620392,
+      0.21764058939048223
+    ],
+    "val_loss": [
+      0.4949744661649068,
+      0.24851004183292388,
+      0.1627974182367325
+    ],
+    "val_eer": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "val_auc": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

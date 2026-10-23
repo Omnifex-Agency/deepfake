@@ -1,0 +1,23 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Scratch & temporary logs
+scratch/
+*.log
+.DS_Store
+Thumbs.db
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local PDF archive (downloaded via research/download_expanded_papers.py)
+research/papers/pdfs/*.pdf
+!research/papers/pdfs/.gitkeep

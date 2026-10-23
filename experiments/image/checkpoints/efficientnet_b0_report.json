@@ -1,0 +1,56 @@
+{
+  "model_name": "efficientnet_b0",
+  "best_val_auc": 1.0,
+  "temperature": 1.4581620693206787,
+  "test_metrics_raw": {
+    "accuracy": 0.9782608695652174,
+    "precision": 0.9583333333333334,
+    "recall": 1.0,
+    "f1_score": 0.9787234042553191,
+    "macro_f1": 0.9782505910165484,
+    "roc_auc": 1.0,
+    "pr_auc": 0.9999999999999998,
+    "fpr_at_95_recall": 0.0,
+    "expected_calibration_error": 0.3792047209065893,
+    "brier_score": 0.1456767744445438,
+    "true_positives": 23,
+    "true_negatives": 22,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "loss": 0.47936961702678516
+  },
+  "test_metrics_calibrated": {
+    "accuracy": 0.9782608695652174,
+    "precision": 0.9583333333333334,
+    "recall": 1.0,
+    "f1_score": 0.9787234042553191,
+    "macro_f1": 0.9782505910165484,
+    "roc_auc": 1.0,
+    "pr_auc": 0.9999999999999998,
+    "fpr_at_95_recall": 0.0,
+    "expected_calibration_error": 0.4159790743952212,
+    "brier_score": 0.1739687193774505,
+    "true_positives": 23,
+    "true_negatives": 22,
+    "false_positives": 1,
+    "false_negatives": 0
+  },
+  "history": {
+    "train_loss": [
+      0.42192549478440056,
+      0.1879692500545865
+    ],
+    "val_loss": [
+      0.4994421655481512,
+      0.14071669497273184
+    ],
+    "val_auc": [
+      1.0,
+      1.0
+    ],
+    "val_f1": [
+      0.9565217391304348,
+      1.0
+    ]
+  }
+}

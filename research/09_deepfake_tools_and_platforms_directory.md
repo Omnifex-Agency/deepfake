@@ -66,36 +66,39 @@ graph TD
 ```
 
 ### 4.1 Visual Benchmarks
-- **FaceForensics++ (FF++) (ICCV 2019):** 1,000 pristine YouTube sequences manipulated with 4 methods (Deepfakes, Face2Face, FaceSwap, NeuralTextures) across 3 compression regimes (Raw/c0, HQ/c23, LQ/c40).
-- **Celeb-DF v2 (CVPR 2020):** 5,639 high-definition videos with reduced boundary artifacts and improved color harmony, presenting an advanced generalization challenge.
-- **WildDeepfake (ACM MM 2021):** 7,314 real-world internet-harvested deepfake sequences with diverse facial poses, camera motions, and occlusions.
-- **GenImage (NeurIPS 2023):** Over 1.3 million images generated across 8 generative models (Stable Diffusion v1.4/v1.5, Midjourney, DALL-E, ADM, VQDM, BigGAN).
+- [**FaceForensics++ (FF++) (ICCV 2019)**](https://github.com/ondyari/FaceForensics): 1,000 pristine YouTube sequences manipulated with 4 methods (Deepfakes, Face2Face, FaceSwap, NeuralTextures) across 3 compression regimes (Raw/c0, HQ/c23, LQ/c40).
+- [**Celeb-DF v2 (CVPR 2020)**](https://github.com/yuezunli/celeb-deepfakeforensics): 5,639 high-definition videos with reduced boundary artifacts and improved color harmony, presenting an advanced generalization challenge.
+- [**WildDeepfake (ACM MM 2021)**](https://github.com/BojiaZi/WildDeepfake): 7,314 real-world internet-harvested deepfake sequences with diverse facial poses, camera motions, and occlusions.
+- [**GenImage (NeurIPS 2023)**](https://github.com/GenImage-Dataset/GenImage) ([Hugging Face](https://huggingface.co/datasets/GenImage)): Over 1.3 million images generated across 8 generative models (Stable Diffusion v1.4/v1.5, Midjourney, DALL-E, ADM, VQDM, BigGAN).
+- [**CIFAKE (2023)**](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images): 60,000 balanced real CIFAR-10 vs. Stable Diffusion v1.4 synthetic images, optimal for rapid pipeline sanity validation.
 
 ### 4.2 Audio Anti-Spoofing Benchmarks
-- **ASVspoof 2019 LA (Logical Access):** 121,461 audio files evaluating 19 speech synthesis and voice conversion algorithms.
-- **ASVspoof 2021 DF (Deepfake Track):** 600,000+ files processed through lossy VoIP and telephony audio codecs.
-- **WaveFake (Interspeech 2021):** 117,984 files across 6 neural vocoders (MelGAN, Parallel WaveGAN, Multi-band MelGAN, HiFi-GAN, WaveGlow) in English and Japanese.
-- **In-The-Wild Audio Deepfake (2022):** Real-world audio clips of politicians, celebrities, and business leaders harvested from public social media.
+- [**ASVspoof 2019 LA (Logical Access)**](https://www.asvspoof.org/) ([Edinburgh DataShare](https://datashare.ed.ac.uk/handle/10283/3336)): 121,461 audio files evaluating 19 speech synthesis and voice conversion algorithms.
+- [**ASVspoof 2021 DF (Deepfake Track)**](https://www.asvspoof.org/) ([Edinburgh DataShare](https://datashare.ed.ac.uk/handle/10283/4867)): 600,000+ files processed through lossy VoIP and telephony audio codecs.
+- [**WaveFake (Interspeech 2021)**](https://github.com/joel-frank/wavefake) ([Zenodo Archive](https://zenodo.org/record/5642694)): 117,984 files across 6 neural vocoders (MelGAN, Parallel WaveGAN, Multi-band MelGAN, HiFi-GAN, WaveGlow) in English and Japanese.
+- [**In-The-Wild Audio Deepfake (2022)**](https://deepfake-total.com/in_the_wild_dataset) ([GitHub](https://github.com/piotrkawa/deepfake-total-dataset)): Real-world audio clips of politicians, celebrities, and business leaders harvested from public social media.
 
 ### 4.3 Multimodal Audio-Visual Benchmarks
-- **FakeAVCeleb (NeurIPS 2021):** 21,566 video clips systematically partitioned into a **4-quadrant manipulation matrix** (co-developed with Indian researcher representation):
+- [**FakeAVCeleb (NeurIPS 2021)**](https://github.com/DVoice-Lab/FakeAVCeleb) ([arXiv:2108.05080](https://arxiv.org/abs/2108.05080)): 21,566 video clips systematically partitioned into a **4-quadrant manipulation matrix** (co-developed with Indian researcher representation):
   - Real Video + Real Audio (RR)
   - Fake Video + Real Audio (FR)
   - Real Video + Fake Audio (RF)
   - Fake Video + Fake Audio (FF)
-- **Deepfake Detection Challenge (DFDC) (Facebook/Kaggle 2020):** Over 100,000 clips with diverse lighting conditions, head angles, background noise, and actors.
+- [**Deepfake Detection Challenge (DFDC) (Facebook/Kaggle 2020)**](https://www.kaggle.com/c/deepfake-detection-challenge): Over 100,000 clips with diverse lighting conditions, head angles, background noise, and actors.
 
 ### 4.4 Indian & South Asian Benchmarks & Indic Datasets
-- **IndiFake (Indian Deepfake Dataset):**
+- [**IndiFake (Indian Deepfake Dataset)**](https://github.com/iab-rubic/IndianDeepfakeBenchmark) ([IAB-RUBIC Lab](https://iab-rubic.github.io/)):
   - **Focus:** Addresses extreme ethnic representation bias in Western datasets by capturing **South Asian facial phenotypes** across Fitzpatrick Skin Types IV to VI.
   - **Contents:** Over 15,000 facial videos reflecting typical Indian lighting conditions, diverse skin undertones, regional facial hair styles (moustaches, beards), and cultural adornments (bindis, tilaks, turbans, nose pins).
   - **Manipulations:** Synthesized via DeepFaceLab, SimSwap, and LivePortrait to benchmark cross-ethnic generalization.
-- **Bhashini IndicSpeech & Multilingual Audio Spoofing Benchmarks:**
+- [**Bhashini IndicSpeech & Multilingual Audio Spoofing Benchmarks**](https://bhashini.gov.in/):
   - **Origin:** Developed under the Ministry of Electronics & IT (MeitY) **National Language Translation Mission (NLTM)**.
   - **Linguistic Coverage:** 22 official Indian languages including Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, Malayalam, Gujarati, and Punjabi.
   - **Significance:** First comprehensive benchmark evaluating speech anti-spoofing against zero-shot voice cloning in tonal, retroflex, and aspirated Indic language acoustics.
-- **FakeAVCeleb South Asian & Indian Politician Subsets:**
+- [**FakeAVCeleb South Asian & Indian Politician Subsets**](https://github.com/DVoice-Lab/FakeAVCeleb):
   - Isolated evaluation partitions containing Indian political figures, multilingual campaign dubs, and Bollywood celebrity interviews to test cross-modal phoneme-viseme alignment in code-mixed languages ("Hinglish").
+- [**IIT Jodhpur South Asian Biometric Benchmark**](https://iab-rubic.github.io/):
+  - High-resolution facial, ocular, and multi-spectral biometric benchmark for auditing optical rPPG degradation and camera sensor PRNU noise variance across tropical Indian environmental conditions.
 
 ---
 

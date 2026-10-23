@@ -42,7 +42,7 @@
 |:---|:---|:---|
 | **[10 · 📚 Literature Review](research/10_deepfake_literature_review.md)** | 78 verified academic papers synthesized across 11 scientific domains | CVPR, ICCV, ECCV, NeurIPS, PNAS, Interspeech, ICASSP, IEEE T-BIOM coverage |
 | **[📂 Papers Directory & Catalog](research/papers/PAPERS_DIRECTORY.md)** | Annotated catalog with direct links, metrics, and local PDF endpoints | 78 papers cataloged across 11 specialized categories |
-| **[11 · 🎯 Research Gaps & Hypotheses](research/11_deepfake_research_gaps.md)** | 5 formal research gaps and H1–H4 falsifiable hypotheses | JPEG frequency collapse, audio codec collapse, modality absence |
+| **[11 · 🎯 Research Gaps & Hypotheses](research/11_deepfake_research_gaps.md)** | 6 formal research gaps and H1–H5 falsifiable hypotheses | Frequency degradation, audio codec collapse, modality dominance, calibration, and Indic demographic bias |
 | **[12 · 🏗️ Model Comparison Matrix](research/12_deepfake_model_comparison.md)** | 12 candidate architectures evaluated | VRAM footprint, latency, and real-time execution matrix |
 | **[13 · 📊 Dataset Analysis & Protocols](research/13_deepfake_dataset_analysis.md)** | 11 benchmark datasets + **Indian & South Asian Representation Analysis** | Zero-leakage partition protocols, **Fitzpatrick IV–VI melanin rPPG bias, Indic speech phonetics** |
 | **[14 · 📋 Side-by-Side Invariance Matrix](research/14_deepfake_paper_comparison.md)** | Cross-generator and cross-codec invariance comparison | Compression tolerance, latency, and vulnerability breakdown |
@@ -152,6 +152,33 @@ graph TD
 
 ---
 
+## 🔬 Research Gaps, Empirical Dilemmas & Falsifiable Hypotheses
+
+Forensic research frequently suffers from publication bias, static benchmarking, and demographic blindness. This repository synthesizes **six critical literature gaps** and formulates **five mathematically rigorous, falsifiable hypotheses** ($H_1$–$H_5$) structured with explicit disproving criteria:
+
+```mermaid
+graph LR
+    G1["Gap 1: Frequency Fragility (GAN vs. Diffusion)"] --> H1["H1: Dual-Stream Spatial-Gabor CLIP Fusion"]
+    G2["Gap 2: Audio Codec Collapse (Opus / AAC / MP3)"] --> H2["H2: Codec-Augmented Whisper Representation"]
+    G3["Gap 3: Modality Dominance & Video Bias"] --> H3["H3: Decoupled Asymmetric Fusion Gate"]
+    G4["Gap 4: Extreme Miscalibration (ECE > 15%)"] --> H4["H4: Temperature Scaling & Isotonic Calibration"]
+    G6["Gap 6: Demographic Melanin & Indic Phonetic Bias"] --> H5["H5: Melanin-Adaptive rPPG + IndicWav2Vec"]
+```
+
+### The Falsifiable Hypothesis Matrix ($H_1$–$H_5$)
+
+| Hypothesis & Focus | Literature Gap Addressed | Technical Intervention | Falsification Criteria (Disproving Threshold) | Benchmark Datasets |
+|:---|:---|:---|:---|:---|
+| **$H_1$: Dual-Domain Spatial-Frequency Invariance** | **Gap 1:** Classifiers overfit to GAN grid artifacts and collapse on unseen diffusion models (DDPM/DiT). | Dual-stream network: 2D Learnable Gabor Filterbank (Branch A) + frozen CLIP ViT-L/14 patch embeddings (Branch B) with cross-attention gating. | Unseen diffusion ROC-AUC within $\pm 2\%$ of vanilla CLIP, OR $>8\%$ performance drop under JPEG compression ($Q=70$). | [FaceForensics++](https://github.com/ondyari/FaceForensics), [Celeb-DF v2](https://github.com/yuezunli/celeb-deepfakeforensics), [GenImage](https://github.com/GenImage-Dataset/GenImage) |
+| **$H_2$: Codec-Augmented Audio Anti-Spoofing** | **Gap 2:** Raw waveform detectors (AASIST) experience $>20\%$ EER collapse under mobile Opus/AAC compression. | Frozen Whisper-Base encoder coupled to SpecRNet with on-the-fly stochastic codec compression (Opus 16–32k, AAC 32–64k, MP3). | Relative EER reduction on in-the-wild speech $<15\%$, OR clean ASVspoof 2019 LA evaluation degrades by $>3.0\%$ EER. | [ASVspoof 2019/2021](https://www.asvspoof.org/), [In-The-Wild Audio](https://deepfake-total.com/in_the_wild_dataset), [WaveFake](https://github.com/joel-frank/wavefake) |
+| **$H_3$: Decoupled Multimodal Fusion Gate** | **Gap 3:** Concatenated multimodal systems suffer modality collapse, failing on Real-Video / Fake-Audio (RF) attacks. | Decoupled unimodal risk scores ($s_v, s_a$) combined with cross-modal temporal dissonance penalty $d_{av} = \|f_v - f_a\|_2$ and modality dropout. | Balanced accuracy on the RF quadrant of FakeAVCeleb fails to improve by at least $8\%$ over joint concatenation. | [FakeAVCeleb](https://github.com/DVoice-Lab/FakeAVCeleb), [DFDC](https://www.kaggle.com/c/deepfake-detection-challenge) |
+| **$H_4$: Post-Hoc Uncertainty Calibration** | **Gap 4:** Cross-entropy trained detectors output extreme, uncalibrated probabilities ($p > 0.999$), driving false alarm rates. | Temperature Scaling and Isotonic Regression calibrated on held-out validation sets; reliability diagram verification. | Expected Calibration Error (ECE) on out-of-distribution media remains $>8\%$ after temperature scaling. | [Celeb-DF v2](https://github.com/yuezunli/celeb-deepfakeforensics), [DeepfakeBench](https://github.com/Sensity-AI/DeepfakeBench) |
+| **$H_5$: Cross-Demographic & Indic Adaptation** | **Gap 6:** Western models drop 15%–22% AUC on South Asian faces (Fitzpatrick IV–VI) and collapse on Indic retroflex/aspirated speech. | Melanin-adaptive Plane-Orthogonal-to-Skin (POS) rPPG chrominance projection + cultural adornment masking + frozen IndicWav2Vec foundation features. | Equal Error Rate on IndiFake remains $>12\%$ OR speech anti-spoofing EER degrades on Indic retroflex tokens by $>4.5\%$ vs. English. | [IndiFake](https://github.com/iab-rubic/IndianDeepfakeBenchmark), [Bhashini IndicSpeech](https://bhashini.gov.in/), [IIT Jodhpur Biometrics](https://iab-rubic.github.io/) |
+
+→ [Read the complete Research Gaps, Hypotheses & Experimental Designs Treatise](research/11_deepfake_research_gaps.md)
+
+---
+
 ## 🛡️ Actionable Defense & Incident Response Playbooks
 
 Standard operating procedures (SOPs) ready for operational deployment:
@@ -190,7 +217,7 @@ deepfake/
     ├── 08_deepfake_defense_playbooks_and_incident_response.md ← Indian 1930 / cybercrime.gov.in SOPs, enterprise & victim response
     ├── 09_deepfake_tools_and_platforms_directory.md           ← Indian datasets (IndiFake, Bhashini) & global tools directory
     ├── 10_deepfake_literature_review.md                       ← 78 academic papers synthesized across 11 domains
-    ├── 11_deepfake_research_gaps.md                           ← H1–H4 formal hypotheses & experimental designs
+    ├── 11_deepfake_research_gaps.md                           ← 6 formal research gaps and H1–H5 falsifiable hypotheses
     ├── 12_deepfake_model_comparison.md                        ← 12 candidate architectures (VRAM/latency matrix)
     ├── 13_deepfake_dataset_analysis.md                        ← 11 benchmark datasets + Indian & South Asian representation analysis
     ├── 14_deepfake_paper_comparison.md                        ← Invariance & limitation side-by-side matrix
